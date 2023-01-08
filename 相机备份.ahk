@@ -61,6 +61,7 @@ loop,Parse,list
 	move_files(DCIM_folder, dest_folder)
 	move_files(video_folder, dest_folder)
 	remove_files(DCIM_folder)
+	MsgBox, 完成拷贝
 }
 
 move_files(source, dest)
