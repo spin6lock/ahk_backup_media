@@ -84,5 +84,6 @@ move_files(source, dest)
 
 remove_files(source)
 {
-	FileRecycle, %source%\*.LRF
+	Loop, Files, %source%\*.LRF, R
+		FileRecycle, %A_LoopFilePath%
 }
