@@ -68,16 +68,19 @@ move_files(source, dest)
 {
 	Loop, Files, %source%\*.mp4, R
 		FileMove, %A_LoopFilePath%, %dest%
-	
+
 	Loop, Files, %source%\*.jpg, R
 		FileMove, %A_LoopFilePath%, %dest%
-	
+
 	Loop, Files, %source%\*.xml, R
 		FileMove, %A_LoopFilePath%, %dest%
-	
+
 	Loop, Files, %source%\*.heic, R
 		FileMove, %A_LoopFilePath%, %dest%
-	
+
+	Loop, Files, %source%\*.ARW, R
+		FileMove, %A_LoopFilePath%, %dest%
+
 	Loop, Files, %source%\*.HIF, R
 		FileMove, %A_LoopFilePath%, %dest%\*.heic
 }
